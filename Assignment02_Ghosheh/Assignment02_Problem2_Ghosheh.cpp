@@ -16,7 +16,7 @@ void insertionSort(int arr[], int n, int& comparisonCount, int &shiftCount){
         int myKey = arr[i];
         int j  = i - 1;
         
-        while (j>= 0 && arr[j] > myKey){
+        while (j>= 0 && arr[j] > myKey){ //  conditional while loop that factors both index value and array value
         // this while loop backwards through the sorted portion
             comparisonCount++;
             arr[j+1] = arr[j];
